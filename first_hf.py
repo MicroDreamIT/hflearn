@@ -1,4 +1,5 @@
 from transformers import pipeline
 
 classifier = pipeline("sentiment-analysis")
-classifier("Hello, I'm a Hugging Face model!")
+res = classifier("I've been waiting for a HuggingFace course sometimes.")
+print(res)
